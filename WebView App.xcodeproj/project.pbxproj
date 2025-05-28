@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DC216CFB2DE755120033BAB5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DC216CFA2DE755120033BAB5 /* SnapKit */; };
+		DC216D0A2DE76E740033BAB5 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = DC216D092DE76E740033BAB5 /* FirebaseAppCheck */; };
+		DC216D0C2DE76E740033BAB5 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DC216D0B2DE76E740033BAB5 /* FirebaseInAppMessaging-Beta */; };
+		DC216D0E2DE76E740033BAB5 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = DC216D0D2DE76E740033BAB5 /* FirebaseRemoteConfig */; };
+		DC216D1B2DE77B940033BAB5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DC216D1A2DE77B940033BAB5 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DC216CD52DE72B040033BAB5 /* WebView App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebView App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC216D0A2DE76E740033BAB5 /* FirebaseAppCheck in Frameworks */,
+				DC216CFB2DE755120033BAB5 /* SnapKit in Frameworks */,
+				DC216D0C2DE76E740033BAB5 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				DC216D0E2DE76E740033BAB5 /* FirebaseRemoteConfig in Frameworks */,
+				DC216D1B2DE77B940033BAB5 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,11 @@
 			);
 			name = "WebView App";
 			packageProductDependencies = (
+				DC216CFA2DE755120033BAB5 /* SnapKit */,
+				DC216D092DE76E740033BAB5 /* FirebaseAppCheck */,
+				DC216D0B2DE76E740033BAB5 /* FirebaseInAppMessaging-Beta */,
+				DC216D0D2DE76E740033BAB5 /* FirebaseRemoteConfig */,
+				DC216D1A2DE77B940033BAB5 /* Kingfisher */,
 			);
 			productName = "WebView App";
 			productReference = DC216CD52DE72B040033BAB5 /* WebView App.app */;
@@ -107,6 +125,11 @@
 			);
 			mainGroup = DC216CCC2DE72B040033BAB5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DC216CF92DE755120033BAB5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DC216D082DE76E740033BAB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DC216D192DE77B940033BAB5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DC216CD62DE72B040033BAB5 /* Products */;
 			projectDirPath = "";
@@ -149,9 +172,10 @@
 				INFOPLIST_FILE = "WebView App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -176,9 +200,10 @@
 				INFOPLIST_FILE = "WebView App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +358,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC216CF92DE755120033BAB5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		DC216D082DE76E740033BAB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+		DC216D192DE77B940033BAB5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC216CFA2DE755120033BAB5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC216CF92DE755120033BAB5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DC216D092DE76E740033BAB5 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC216D082DE76E740033BAB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		DC216D0B2DE76E740033BAB5 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC216D082DE76E740033BAB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		DC216D0D2DE76E740033BAB5 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC216D082DE76E740033BAB5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		DC216D1A2DE77B940033BAB5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC216D192DE77B940033BAB5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC216CCD2DE72B040033BAB5 /* Project object */;
 }
